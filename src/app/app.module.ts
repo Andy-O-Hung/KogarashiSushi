@@ -12,7 +12,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { NavComponent } from './components/nav/nav.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
@@ -23,7 +22,6 @@ import { ReservationComponent } from './components/reservation/reservation.compo
   declarations: [
     AppComponent,
     HomeComponent,
-    NavComponent,
     MenuComponent,
     HeaderComponent,
     SlideshowComponent,
