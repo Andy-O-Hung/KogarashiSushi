@@ -1,5 +1,5 @@
 # KogarashiSushi
-Front-End 
+Front-End -
 Part of a Full Stack Project
 
 # FOR EDUCATIONAL PURPOSES
