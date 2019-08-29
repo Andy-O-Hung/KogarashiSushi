@@ -1,5 +1,16 @@
-<mat-tab-group>
-        <mat-tab label="First"> Content 1 </mat-tab>
-        <mat-tab label="Second"> Content 2 </mat-tab>
-        <mat-tab label="Third"> Content 3 </mat-tab>
-      </mat-tab-group>
+<h1>Dine at our Strategicly Located Places</h1>
+
+<agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+  <agm-marker [latitude]="latitude" [longitude]="longitude">
+    <agm-info-window *ngIf="shinjuku"><span class="mapText">Shinjuku District</span></agm-info-window>
+    <agm-info-window *ngIf="minamiaoyama"><span class="mapText">Minamiaoyama District</span></agm-info-window>
+  </agm-marker>
+</agm-map>
+
+<div fxLayoutAlign="center">
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style" #group="matButtonToggleGroup">
+    <mat-button-toggle (click)="shin()">Shinjuku</mat-button-toggle>
+    <mat-button-toggle (click)="mina()">Minamiaoyama</mat-button-toggle>
+    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>

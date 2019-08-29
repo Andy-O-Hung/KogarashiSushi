@@ -20,8 +20,17 @@ export class MenuComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
     });
   }
+
+  CockTailMenuDialog(): void {
+    const dialogRef = this.dialog.open(DialogMenuComponent, {
+      width: '250px', data: {type: "Cocktail Menu"}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
+  }
+
 
 }
