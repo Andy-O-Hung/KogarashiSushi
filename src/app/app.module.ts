@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatCardModule} from '@angular/material/card';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ReservationComponent } from './components/reservation/reservation.component';
+import * as api from '../ApiKeys.js';
+import { DialogMenuComponent } from './components/dialog-menu/dialog-menu.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { ReservationComponent } from './components/reservation/reservation.compo
     HeaderComponent,
     SlideshowComponent,
     FooterComponent,
-    ReservationComponent
+    ReservationComponent,
+    DialogMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -34,13 +38,20 @@ import { ReservationComponent } from './components/reservation/reservation.compo
     NgbModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAwrxYLYFVieV7rnI2gK1Z_bvSgg4WPbS8'
+      apiKey: api.googleMaps
     }),
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
     MatTabsModule,
-    FlexLayoutModule 
+    FlexLayoutModule,
+    MatDialogModule
+  ],
+  exports: [
+    DialogMenuComponent
+  ],
+  entryComponents:[
+    DialogMenuComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

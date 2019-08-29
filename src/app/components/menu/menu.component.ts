@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogMenuComponent } from '../dialog-menu/dialog-menu.component';
 
 @Component({
   selector: 'app-menu',
@@ -7,13 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
   }
 
-  MenuDialog(){
-    console.log("d")
+  SushiMenuDialog(): void {
+    const dialogRef = this.dialog.open(DialogMenuComponent, {
+      width: '250px', data: {type: "Sushi Menu"}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
   }
 
 }
