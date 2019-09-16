@@ -28,7 +28,7 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //use .net core 2.2 and dont use camel case.
+            //use .net core 2.2 and dont use camel case when requesting data.
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
                 .AddJsonOptions(options => {
                     var resolver = options.SerializerSettings.ContractResolver;

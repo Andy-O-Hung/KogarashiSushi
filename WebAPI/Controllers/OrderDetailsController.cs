@@ -21,6 +21,7 @@ namespace WebAPI.Controllers
         }
 
         // GET: api/OrderDetails
+        // Returns all of Orders in the DB
         [HttpGet]
         public async Task<ActionResult<IEnumerable<OrderDetail>>> GetPaymentDetails()
         {
@@ -28,6 +29,7 @@ namespace WebAPI.Controllers
         }
 
         // GET: api/OrderDetails/5
+        // Returns the Order given the ID for it
         [HttpGet("{id}")]
         public async Task<ActionResult<OrderDetail>> GetOrderDetail(int id)
         {
@@ -42,6 +44,7 @@ namespace WebAPI.Controllers
         }
 
         // PUT: api/OrderDetails/5
+        // Update the given order ID
         [HttpPut("{id}")]
         public async Task<IActionResult> PutOrderDetail(int id, OrderDetail orderDetail)
         {
@@ -72,6 +75,7 @@ namespace WebAPI.Controllers
         }
 
         // POST: api/OrderDetails
+        // Insert a order
         [HttpPost]
         public async Task<ActionResult<OrderDetail>> PostOrderDetail(OrderDetail orderDetail)
         {
@@ -82,6 +86,7 @@ namespace WebAPI.Controllers
         }
 
         // DELETE: api/OrderDetails/5
+        // Delete a given order.
         [HttpDelete("{id}")]
         public async Task<ActionResult<OrderDetail>> DeleteOrderDetail(int id)
         {
