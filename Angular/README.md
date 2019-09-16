@@ -1,5 +1,2 @@
-# KogarashiSushi
-Front-End -
-Part of a Full Stack Project
-
-# FOR EDUCATIONAL PURPOSES
+# KogarashiSushi Front-End
+The Front-end part. Designing is hard.
