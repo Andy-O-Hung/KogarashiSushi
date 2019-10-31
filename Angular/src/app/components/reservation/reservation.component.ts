@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-reservation',
@@ -13,9 +15,16 @@ export class ReservationComponent implements OnInit {
   shinjuku: boolean = true;
   minamiaoyama: boolean = false;
 
-  constructor() { }
+  PersonsText: string;
+  AmountText: number;
+  DateText: string;
+  PhoneText: number;
+  constructor(private toastr: ToastrService) { }
 
   ngOnInit() {
+    this.toastr.toastrConfig.timeOut = 2000;
+    this.toastr.toastrConfig.positionClass = "toast-bottom-right";
+    this.resetForm();
   }
 
   shin(){
@@ -30,6 +39,17 @@ export class ReservationComponent implements OnInit {
     this.longitude = 139.713721;
     this.shinjuku = false;
     this.minamiaoyama = true;
+  }
+
+  resetForm(form?: NgForm) {
+    if (form != null)
+      form.form.reset();
+    console.log(form)
+  }
+
+  onSubmit(form: NgForm) {
+    this.toastr.success("Reserved", "Thank you");
+    this.resetForm(form);
   }
 
 }

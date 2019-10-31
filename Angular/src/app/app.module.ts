@@ -10,6 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import {ToastrModule} from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,7 +32,7 @@ import { DialogMenuComponent } from './components/dialog-menu/dialog-menu.compon
     SlideshowComponent,
     FooterComponent,
     ReservationComponent,
-    DialogMenuComponent
+    DialogMenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +48,8 @@ import { DialogMenuComponent } from './components/dialog-menu/dialog-menu.compon
     MatTabsModule,
     FlexLayoutModule,
     MatDialogModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    ToastrModule.forRoot()
   ],
   exports: [
     DialogMenuComponent

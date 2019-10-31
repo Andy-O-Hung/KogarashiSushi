@@ -8,3 +8,17 @@ agm-map{
 h1 {
     text-align: center;
 }
+
+button:disabled{
+  background-color: red;
+}
+button:enabled {
+    background-color: green;
+}
+button:hover {
+    cursor: pointer;
+}
+.submit {
+    width: 100%;
+    display: block;
+}
