@@ -18,12 +18,11 @@ export class SlideshowComponent implements OnInit {
   pauseOnHover = false;
 
   constructor(private imgSer : ImagesService) { 
-    
+    this.images = this.imgSer.getHome();
   }
 
   ngOnInit() {
     // console.log(this.imgSer.getHome())
-    this.images = this.imgSer.getHome();
   }
 
   @ViewChild('carousel', {static : true}) carousel: NgbCarousel;

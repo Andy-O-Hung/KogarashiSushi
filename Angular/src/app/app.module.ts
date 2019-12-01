@@ -11,6 +11,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import {ToastrModule} from 'ngx-toastr';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ReservationComponent } from './components/reservation/reservation.component';
 import * as api from '../ApiKeys.js';
 import { DialogMenuComponent } from './components/dialog-menu/dialog-menu.component';
+import { CarryoutComponent } from './components/carryout/carryout.component';
+import { CalenderComponent } from './components/calender/calender.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +37,9 @@ import { DialogMenuComponent } from './components/dialog-menu/dialog-menu.compon
     FooterComponent,
     ReservationComponent,
     DialogMenuComponent,
+    CarryoutComponent,
+    CalenderComponent,
+    AboutusComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +56,7 @@ import { DialogMenuComponent } from './components/dialog-menu/dialog-menu.compon
     FlexLayoutModule,
     MatDialogModule,
     MatButtonToggleModule,
+    HttpClientModule,
     ToastrModule.forRoot()
   ],
   exports: [

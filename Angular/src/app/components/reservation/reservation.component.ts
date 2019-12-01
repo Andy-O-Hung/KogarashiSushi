@@ -14,6 +14,7 @@ export class ReservationComponent implements OnInit {
   zoom: number = 20;
   shinjuku: boolean = true;
   minamiaoyama: boolean = false;
+  commerce: boolean = false;
 
   PersonsText: string;
   AmountText: number;
@@ -41,10 +42,17 @@ export class ReservationComponent implements OnInit {
     this.minamiaoyama = true;
   }
 
+  comm(){
+    this.latitude = 40.731731;
+    this.longitude = -74.004439;
+    this.shinjuku = false;
+    this.minamiaoyama = false;
+    this.commerce = true;
+  }
+
   resetForm(form?: NgForm) {
     if (form != null)
       form.form.reset();
-    console.log(form)
   }
 
   onSubmit(form: NgForm) {

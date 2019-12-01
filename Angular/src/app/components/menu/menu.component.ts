@@ -16,7 +16,7 @@ export class MenuComponent implements OnInit {
 
   SushiMenuDialog(): void {
     const dialogRef = this.dialog.open(DialogMenuComponent, {
-      width: '250px', data: {type: "Sushi Menu"}
+      width: '500px', data: {type: "Sushi Menu"}
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -25,7 +25,7 @@ export class MenuComponent implements OnInit {
 
   CockTailMenuDialog(): void {
     const dialogRef = this.dialog.open(DialogMenuComponent, {
-      width: '250px', data: {type: "Cocktail Menu"}
+      width: '500px', data: {type: "Cocktail Menu"}
     });
 
     dialogRef.afterClosed().subscribe(result => {

@@ -1,6 +1,89 @@
 <h1 mat-dialog-title>{{data.type}}</h1>
 <div mat-dialog-content>
-  <p>Menu Dialog</p>
+  <div *ngIf="data.type == 'Sushi Menu'">
+    <table><!--Starts table-->
+      <tr><!-- Column header -->
+          <th>Name</th>
+          <th>Details</th>
+      </tr>
+      <tbody>
+      <tr><!-- Row 1 -->
+          <td class="indexcolumn1">
+              New York Roll
+          </td>
+          <td>
+              Iceberg lettuce, dried gourd (kampyo), cucumber, asparagus & yellow radish.
+          </td>
+      </tr>
+      <tr><!-- Row 2 -->
+          <td class="indexcolumn1">
+              California Roll
+          </td>
+          <td>
+              Spicy tuna, two deep fried jumbo shrimp & avocado.
+          </td>
+      </tr>
+      <tr><!-- Row 3 -->
+          <td class="indexcolumn1">
+              Shinjuku Roll
+          </td>
+          <td>
+              Avocado, crab stick, cucumber and tuna roll with spicy crab salad on top.
+          </td>
+      </tr>
+      <tr><!-- Row 4 -->
+        <td class="indexcolumn1">
+            Minamiaoyama Roll
+        </td>
+        <td>
+            Two jumbo shrimp tempura, crab stick, cucumber. Tuna sashimi and spicy mayo sauce on top.
+        </td>
+    </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="data.type == 'Cocktail Menu'">
+      <table><!--Starts table-->
+        <tr><!-- Column header -->
+            <th>Name</th>
+            <th>Details</th>
+        </tr>
+        <tbody>
+        <tr><!-- Row 1 -->
+            <td class="indexcolumn1">
+                Bloody Mary
+            </td>
+            <td>
+                Contains vodka, tomato juice, olives, celery, lemon juice, garlic, and herbs.
+            </td>
+        </tr>
+        <tr><!-- Row 2 -->
+            <td class="indexcolumn1">
+                Sazerac
+            </td>
+            <td>
+                Absinthe, sugar cube, Rye whiskey, Three dashes Peychaud's Bitters.
+            </td>
+        </tr>
+        <tr><!-- Row 3 -->
+            <td class="indexcolumn1">
+                Negroni
+            </td>
+            <td>
+                Gin, Campari, Sweet red Vermouth, garnished with orange peel
+            </td>
+        </tr>
+        <tr><!-- Row 4 -->
+          <td class="indexcolumn1">
+              Margarita
+          </td>
+          <td>
+              Tequila, Lime Juice, Cointreau, 1 Slice of Lime or blueberrys
+          </td>
+      </tr>
+        </tbody>
+      </table>
+    </div>
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="onNoClick()">Close</button>

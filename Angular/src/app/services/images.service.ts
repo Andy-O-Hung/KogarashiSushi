@@ -19,4 +19,32 @@ export class ImagesService {
     homeArray.push(h3)
     return homeArray
   }
+
+  getCarryOut() : Image[]{
+    var carryArray : Image[] = []
+    let h1: Image = {fname: "carryout", path: "assets/images/carryout.jpg"}
+    carryArray.push(h1);
+    return carryArray;
+  }
+
+  getGlobalImages() : Image[]{
+    var globalArray : Image[] = []
+    let h1: Image = {fname: "logo", path: "assets/images/logo.png"}
+    globalArray.push(h1);
+    return globalArray;
+  }
+
+  getCalender() : Image[]{
+    var calenderArray : Image[] = []
+    let h1: Image = {fname: "calender", path: "assets/images/calender.jpg"}
+    calenderArray.push(h1);
+    return calenderArray;
+  }
+
+  getAboutUs() : Image[]{
+    var aboutUsArray : Image[] = []
+    let h1: Image = {fname: "aboutus", path: "assets/images/aboutus.jpg"}
+    aboutUsArray.push(h1);
+    return aboutUsArray;
+  }
 }
