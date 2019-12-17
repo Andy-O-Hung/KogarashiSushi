@@ -46,3 +46,9 @@ hr{
   height: 1px;
   background-color: white;
 }
+.mat-tab-header-pagination-chevron {
+  background-color: white;
+}
+.mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron {
+  background-color: red;
+}

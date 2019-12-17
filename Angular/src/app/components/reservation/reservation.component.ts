@@ -8,8 +8,8 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./reservation.component.scss']
 })
 export class ReservationComponent implements OnInit {
-  latitude: number = 35.701691;
-  longitude: number = 139.739176;
+  latitude: number = 35.700807;
+  longitude: number = 139.741729;
   bold: string = "initial";
   zoom: number = 20;
   shinjuku: boolean = true;
@@ -29,8 +29,8 @@ export class ReservationComponent implements OnInit {
   }
 
   shin(){
-    this.latitude = 35.701691;
-    this.longitude = 139.739176;
+    this.latitude = 35.700807;
+    this.longitude = 139.741729;
     this.shinjuku = true;
     this.minamiaoyama = false;
   }

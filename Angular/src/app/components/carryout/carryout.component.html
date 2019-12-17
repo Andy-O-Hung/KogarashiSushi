@@ -9,62 +9,116 @@
     <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
         <input type="hidden" name="COId" [value]="service.formData.COId">
         <div class="form-row">
+            <div class="form-group col-md-5">
             <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                        <i class="fas fa-user-circle" [class.green-icon]="Persons.valid" [class.red-icon]="Persons.invalid && Persons.touched"></i>
+                    </div>
+                </div>
                 <input name="CustomerName" #Persons="ngModel" [(ngModel)]="service.formData.CustomerName" class="form-control"
                 placeholder="Customer Name" required>
+            </div>
             </div>
         </div>
         <br>
         <div class="form-row">
+            <div class="form-group col-md-6">
             <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                        <i class="fas fa-phone" [class.green-icon]="Persons.valid" [class.red-icon]="Persons.invalid && Persons.touched"></i>
+                    </div>
+                </div>
                 <input name="CustomerPhone" #Persons="ngModel" [(ngModel)]="service.formData.CustomerPhone" class="form-control"
                 placeholder="Customer Phone Number" required>
             </div>
-        </div>
-        <div class="form-row">
-            <div class="input-group">
+            </div>
+            <div class="form-group col-md-6">
+            <div class="input-group"> 
+                <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                        <i class="far fa-id-card" [class.green-icon]="Persons.valid" [class.red-icon]="Persons.invalid && Persons.touched"></i>
+                    </div>
+                </div>
                 <input name="CardOwnerName" #Persons="ngModel" [(ngModel)]="service.formData.CardOwnerName" class="form-control"
                 placeholder="Card Owner Name" required>
             </div>
+            </div>
         </div>
         <div class="form-row">
+            <div class="form-group col-md-6">
             <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                        <i class="far fa-credit-card" [class.green-icon]="Persons.valid" [class.red-icon]="Persons.invalid && Persons.touched"></i>
+                    </div>
+                </div>
                 <input name="CardNumber" #Persons="ngModel" [(ngModel)]="service.formData.CardNumber" class="form-control"
                 placeholder="Card #" required>
             </div>
-        </div>
-        <div class="form-row">
+            </div>
+            <div class="form-group col-md-4">
             <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                        <i class="far fa-calendar-alt" [class.green-icon]="Persons.valid" [class.red-icon]="Persons.invalid && Persons.touched"></i>
+                    </div>
+                </div>
                 <input name="ExpirationDate" #Persons="ngModel" [(ngModel)]="service.formData.ExpirationDate" class="form-control"
-                placeholder="Card Expiration Date" required>
+                placeholder="Card Expiration Date" required maxlength="5" minlength="5">
+            </div>
+            </div>
+            <div class="form-group col-md-2">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                        <i class="fas fa-key" [class.green-icon]="Persons.valid" [class.red-icon]="Persons.invalid && Persons.touched"></i>
+                    </div>
+                </div>
+                <input type="password" name="CVV" #Persons="ngModel" [(ngModel)]="service.formData.CVV" class="form-control"
+                placeholder="Card CVV" required maxlength="3" minlength="3">
+            </div>
             </div>
         </div>
         <div class="form-row">
+            <div class="form-group col-md-6">
             <div class="input-group">
-                <input name="CVV" #Persons="ngModel" [(ngModel)]="service.formData.CVV" class="form-control"
-                placeholder="Card CVV" required>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                        <i class="fas fa-map-marked" [class.green-icon]="Persons.valid" [class.red-icon]="Persons.invalid && Persons.touched"></i>
+                    </div>
+                </div>
                 <input name="Location" #Persons="ngModel" [(ngModel)]="service.formData.Location" class="form-control"
                 placeholder="Location" required>
             </div>
-        </div>
-        <div class="form-row">
+            </div>
+            <div class="form-group col-md-6">
             <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                        <i class="fas fa-envelope-square" [class.green-icon]="Persons.valid" [class.red-icon]="Persons.invalid && Persons.touched"></i>
+                    </div>
+                </div>
                 <input name="Email" #Persons="ngModel" [(ngModel)]="service.formData.Email" class="form-control"
                 placeholder="Email" required>
             </div>
+            </div>
         </div>
         <div class="form-row">
-            <div class="input-group">
+            <div class="input-group col-md">
+                <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                        <i class="far fa-question-circle" [class.green-icon]="Persons.valid" [class.red-icon]="Persons.invalid && Persons.touched"></i>
+                    </div>
+                </div>
                 <input name="Order" #Persons="ngModel" [(ngModel)]="service.formData.Order" class="form-control"
                 placeholder="What you want" required>
             </div>
         </div>
+        <br>
         <div class="form-group">
-            <button class="btn btn-success btn-lg btn-block" type="submit" [disabled]="form.invalid"><i class="fas fa-database"></i> Submit</button>
+            <button class="btn btn-lg btn-block" type="submit" [disabled]="form.invalid"><i class="fas fa-database"></i> Submit</button>
         </div>
     </form>
 </div>
