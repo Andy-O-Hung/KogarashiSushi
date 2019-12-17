@@ -1,0 +1,14 @@
+E:\ang\KogarashiSushi\SeleniumDemo\bin\Release\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+E:\ang\KogarashiSushi\SeleniumDemo\bin\Release\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+E:\ang\KogarashiSushi\SeleniumDemo\bin\Release\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+E:\ang\KogarashiSushi\SeleniumDemo\bin\Release\netcoreapp2.2\SeleniumDemo.deps.json
+E:\ang\KogarashiSushi\SeleniumDemo\bin\Release\netcoreapp2.2\SeleniumDemo.runtimeconfig.json
+E:\ang\KogarashiSushi\SeleniumDemo\bin\Release\netcoreapp2.2\SeleniumDemo.runtimeconfig.dev.json
+E:\ang\KogarashiSushi\SeleniumDemo\bin\Release\netcoreapp2.2\SeleniumDemo.dll
+E:\ang\KogarashiSushi\SeleniumDemo\obj\Release\netcoreapp2.2\SeleniumDemo.csprojAssemblyReference.cache
+E:\ang\KogarashiSushi\SeleniumDemo\obj\Release\netcoreapp2.2\SeleniumDemo.csproj.CoreCompileInputs.cache
+E:\ang\KogarashiSushi\SeleniumDemo\obj\Release\netcoreapp2.2\SeleniumDemo.AssemblyInfoInputs.cache
+E:\ang\KogarashiSushi\SeleniumDemo\obj\Release\netcoreapp2.2\SeleniumDemo.AssemblyInfo.cs
+E:\ang\KogarashiSushi\SeleniumDemo\bin\Release\netcoreapp2.2\SeleniumDemo.pdb
+E:\ang\KogarashiSushi\SeleniumDemo\obj\Release\netcoreapp2.2\SeleniumDemo.dll
+E:\ang\KogarashiSushi\SeleniumDemo\obj\Release\netcoreapp2.2\SeleniumDemo.pdb

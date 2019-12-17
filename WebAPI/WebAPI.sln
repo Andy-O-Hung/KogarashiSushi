@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI.csproj", "{B14F89B2-B6E0-4A14-8D11-E25A1C491D90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI.csproj", "{B14F89B2-B6E0-4A14-8D11-E25A1C491D90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumDemo", "..\SeleniumDemo\SeleniumDemo.csproj", "{A183EC34-3FD0-412D-9E3D-3BECC141BACB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B14F89B2-B6E0-4A14-8D11-E25A1C491D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B14F89B2-B6E0-4A14-8D11-E25A1C491D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B14F89B2-B6E0-4A14-8D11-E25A1C491D90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A183EC34-3FD0-412D-9E3D-3BECC141BACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A183EC34-3FD0-412D-9E3D-3BECC141BACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A183EC34-3FD0-412D-9E3D-3BECC141BACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A183EC34-3FD0-412D-9E3D-3BECC141BACB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
