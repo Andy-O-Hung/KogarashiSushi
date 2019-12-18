@@ -25,7 +25,7 @@
               <i class="fas fa-user-circle" [class.green-icon]="Persons.valid" [class.red-icon]="Persons.invalid && Persons.touched"></i>
             </div>
           </div>
-          <input name="Persons" #Persons="ngModel" [(ngModel)]="PersonsText" class="form-control" class="form-control"
+          <input name="Persons" #Persons="ngModel" [(ngModel)]="service.formData.CustomerName" class="form-control" class="form-control"
             placeholder="Name of Person(s) Who is Responsible" required>
         </div>
       </div>
@@ -36,7 +36,7 @@
               <i class="fas fa-user-friends" [class.green-icon]="Amount.valid" [class.red-icon]="Amount.invalid && Amount.touched"></i>
             </div>
           </div>
-          <input name="Amount" #Amount="ngModel" [(ngModel)]="AmountText" class="form-control" placeholder="Amount of People" required>
+          <input name="Amount" #Amount="ngModel" [(ngModel)]="service.formData.CardNumber" class="form-control" placeholder="Amount of People" required maxlength="16">
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@
               <i class="fas fa-calendar-alt" [class.green-icon]="Date.valid" [class.red-icon]="Date.invalid && Date.touched"></i>
             </div>
           </div>
-          <input name="Date" #Date="ngModel" [(ngModel)]="DateText" class="form-control"
+          <input name="Date" #Date="ngModel" [(ngModel)]="service.formData.ExpirationDate" class="form-control"
             placeholder="MM/YY" required maxlength="5" minlength="5">
         </div>
       </div>
@@ -59,8 +59,8 @@
               <i class="fas fa-phone-alt" [class.green-icon]="Phone.valid" [class.red-icon]="Phone.invalid && Phone.touched"></i>
             </div>
           </div>
-          <input type="password" name="Phone" #Phone="ngModel" [(ngModel)]="PhoneText" class="form-control" placeholder="Phone Number"
-          required  maxlength="10" minlength="10">
+          <input name="Phone" #Phone="ngModel" [(ngModel)]="service.formData.CustomerPhone" class="form-control" placeholder="Phone Number"
+          required  maxlength="9" minlength="9">
         </div>
       </div>
     </div>

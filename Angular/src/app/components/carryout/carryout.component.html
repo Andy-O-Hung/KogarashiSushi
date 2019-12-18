@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <input name="CardNumber" #Persons="ngModel" [(ngModel)]="service.formData.CardNumber" class="form-control"
-                placeholder="Card #" required>
+                placeholder="Card #" required maxlength="16" minlength="16">
             </div>
             </div>
             <div class="form-group col-md-4">
